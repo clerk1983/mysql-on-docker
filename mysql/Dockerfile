@@ -1,13 +1,13 @@
 #使うDockerイメージ
-FROM mysql:8.0.28
+FROM mysql:8
 
-RUN apt-get update && apt-get install -y \
-  less \
-  procps \
-  && apt-get clean \
-  && rm -fr /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y \
+#   less \
+#   procps \
+#   && apt-get clean \
+#   && rm -fr /var/lib/apt/lists/*
 
-ENV LESSCHARSET=utf-8
+# ENV LESSCHARSET=utf-8
 
   #ポートを開ける
 EXPOSE 3306

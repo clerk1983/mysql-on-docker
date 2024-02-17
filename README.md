@@ -1,12 +1,16 @@
 # MySQL on Docker
 
-## docker-composeでコンテナを起動(./docker-mysqlディレクトリ)
+## docker-compose でコンテナを起動(./docker-mysql ディレクトリ)
 
 docker compose up -d
 
 ## 実行中コンテナにログイン
 
 docker exec -it mysql-container bash
+
+## MySQL 接続
+
+mysql -uroot -p
 
 ## コンテナイメージ一覧
 
